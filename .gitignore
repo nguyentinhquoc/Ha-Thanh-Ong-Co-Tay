@@ -1,0 +1,23 @@
+# Tài liệu nội bộ & file làm việc – chỉ giữ ở máy, không đưa lên GitHub
+docs/
+*.md
+.claude/
+.superpowers/
+.playwright-mcp/
+
+# Bộ kiểm thử / QA nội bộ (script kiểm tra, ảnh chụp màn hình)
+tools/
+
+# Thư viện cài bằng npm
+node_modules/
+
+# Cấu hình editor
+.vscode/
+.idea/
+
+# File rác của hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.exe
