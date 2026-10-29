@@ -1915,6 +1915,34 @@ section,
   color: var(--brand-green);
 }
 
+/* Date inputs have no placeholder: show "Ngày muốn khám" until a date is picked */
+.appointment .php-email-form .date-field {
+  position: relative;
+}
+
+.appointment .php-email-form .date-field input {
+  cursor: pointer;
+}
+
+.appointment .php-email-form .date-field .date-placeholder {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--default-color);
+  pointer-events: none;
+}
+
+.appointment .php-email-form .date-field input.is-empty:not(:focus) {
+  color: transparent;
+}
+
+.appointment .php-email-form .date-field input.is-empty:not(:focus)+.date-placeholder {
+  display: block;
+}
+
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form input[type=tel],

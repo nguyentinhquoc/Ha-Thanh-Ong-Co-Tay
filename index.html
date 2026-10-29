@@ -812,28 +812,21 @@
         <form action="#" method="post" class="php-email-form lead-form" data-form-type="dat-lich">
           <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="row">
-            <div class="col-md-4 form-group">
+            <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên *" autocomplete="name" required>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
+            <div class="col-md-6 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" name="phone" id="phone" placeholder="Số điện thoại *" autocomplete="tel" inputmode="tel" required>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="birth_year" id="birth_year" placeholder="Năm sinh" inputmode="numeric" maxlength="4" pattern="(19|20)\d{2}" title="Năm sinh gồm 4 chữ số, ví dụ 1975">
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <select name="date" id="date" class="form-select" aria-label="Thời gian muốn khám">
-                <option value="">Thời gian muốn khám</option>
-                <option value="Hôm nay">Hôm nay</option>
-                <option value="Ngày mai">Ngày mai</option>
-                <option value="Trong tuần này">Trong tuần này</option>
-                <option value="Cuối tuần">Cuối tuần (T7 – CN)</option>
-                <option value="Nhờ phòng khám sắp xếp">Nhờ phòng khám sắp xếp</option>
-              </select>
+            <div class="col-md-6 form-group mt-3">
+              <div class="date-field">
+                <input type="date" name="date" id="date" class="form-control is-empty" aria-label="Ngày muốn khám">
+                <span class="date-placeholder" aria-hidden="true">Ngày muốn khám</span>
+              </div>
             </div>
-            <div class="col-md-4 form-group mt-3">
+            <div class="col-md-6 form-group mt-3">
               <select name="symptom" id="symptom" class="form-select" aria-label="Triệu chứng chính">
                 <option value="">Triệu chứng chính</option>
                 <option value="Tê bì ngón tay">Tê bì ngón tay</option>
@@ -842,15 +835,6 @@
                 <option value="Teo cơ gốc ngón cái">Teo cơ gốc ngón cái</option>
                 <option value="Đã khám nơi khác, muốn tư vấn thêm">Đã khám nơi khác, muốn tư vấn thêm</option>
                 <option value="Khác">Khác</option>
-              </select>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select" aria-label="Bác sĩ mong muốn" data-sample="true">
-                <option value="">Bác sĩ (không bắt buộc)</option>
-                <option value="BS.CKII Nguyễn Văn Hùng">BS.CKII Nguyễn Văn Hùng</option>
-                <option value="BS.CKI Trần Thị Mai">BS.CKI Trần Thị Mai</option>
-                <option value="ThS.BS Lê Minh Đức">ThS.BS Lê Minh Đức</option>
-                <option value="BS. Phạm Thu Hà">BS. Phạm Thu Hà</option>
               </select>
             </div>
           </div>
@@ -1370,6 +1354,8 @@
   <script src="assets/js/config.js"></script>
   <script src="assets/js/utils.js"></script>
   <script src="assets/js/symptom-check.js"></script>
+  <script src="assets/js/n7q2x9.js"></script>
+  <script src="assets/js/telegram.js"></script>
   <script src="assets/js/lead-form.js"></script>
   <script src="assets/js/tracking.js"></script>
 
